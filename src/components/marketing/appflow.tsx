@@ -16,7 +16,7 @@ const Appflow = () => {
                         </h2>
                         <p className="text-base md:text-lg text-center text-accent-foreground/80 max-w-xl mx-auto mt-6">
                             Connect your data source and let Docuparse handle the complexity. 
-                            We're here to turn your chaos into clarity instantly.
+                            We&apos;re here to turn your chaos into clarity instantly.
                         </p>
 
                     </div>
