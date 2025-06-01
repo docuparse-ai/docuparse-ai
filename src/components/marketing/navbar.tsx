@@ -41,16 +41,16 @@ const Navbar = () => {
                 )}
             >
                 <Wrapper className="backdrop-blur-lg rounded-xl lg:rounded-2xl border border-[rgba(124,124,124,0.2)] px- md:px-2 flex items-center justify-start">
-                    <div className="flex items-center justify-between w-full sticky mt-[7px] lg:mt-auto mb-auto inset-x-0">
+                    <div className="flex items-center justify-center w-full sticky mt-[7px] lg:mt-auto mb-auto inset-x-0">
                         <div className="flex items-center flex-1 lg:flex-none pl-1">
                             <Link href="/" className="text-lg font-semibold text-foreground">
                                 <Icons.icon className="w-auto h-5" />
                             </Link>
-                            <div className="items-center hidden ml-4 lg:flex">
+                            {/* <div className="items-center hidden ml-4 lg:flex">
                                 <Menu />
-                            </div>
+                            </div> */}
                         </div>
-                        <div className="items-center flex gap-2 lg:gap-4">
+                        {/* <div className="items-center flex gap-2 lg:gap-4">
                             {user ? (
                                 <Button size="sm" variant="white" asChild className="hidden sm:flex">
                                     <Link href="/app">
@@ -80,9 +80,9 @@ const Navbar = () => {
                             >
                                 {isOpen ? <XIcon className="w-4 h-4 duration-300" /> : <Icons.menu className="w-3.5 h-3.5 duration-300" />}
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
-                    <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+                    {/* <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
                 </Wrapper>
             </header>
 

@@ -87,7 +87,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                    <li
+                    {/* <li
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
@@ -95,7 +95,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                             <Gem className="w-4 h-4 mr-2" />
                             Pricing
                         </Link>
-                    </li>
+                    </li> */}
                     <li
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"

@@ -28,11 +28,11 @@ const Footer = () => {
                         <p className="text-base max-w mt-4">
                             Empower your business with our AI tools.
                         </p>
-                        <Button className="mt-8">
+                        {/* <Button className="mt-8">
                             <Link href="/app">
                                 Start for free
                             </Link>
-                        </Button>
+                        </Button> */}
                     </div>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-lg mt-10 md:mt-0">
                         {FOOTER_LINKS?.map((section, index) => (

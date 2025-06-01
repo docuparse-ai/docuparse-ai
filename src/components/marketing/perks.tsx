@@ -9,7 +9,7 @@ const Perks = () => {
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full">
             <Container>
                 <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-                    <SectionBadge title="Perks" />
+                    <SectionBadge title="Features" />
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-heading font-medium !leading-snug mt-6">
                         From Raw Data to <br /> <span className="text-amber-400"> Structured Gold </span>
                     </h2>

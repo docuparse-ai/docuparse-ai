@@ -18,7 +18,7 @@ interface MetadataProps {
 
 export const generateMetadata = ({
     title = `${process.env.NEXT_PUBLIC_APP_NAME} - Docuparse AI `,
-    description = "Streamline your social media management with AI-powered analytics, scheduling, and content optimization. Get real-time insights, automate posts, and boost engagement across all platforms",
+    description = "Transform your data with us\nReady to get structured?\nConnect your data source and let Docuparse handle the complexity. We\'re here to turn your chaos into clarity instantly.",
     image = "/thumbnail.png",
     icons = [
         {
@@ -51,7 +51,7 @@ export const generateMetadata = ({
     publishedTime,
     modifiedTime
 }: MetadataProps = {}): Metadata => {
-    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://luro-ai.vercel.app");
+    const metadataBase = new URL(process.env.NEXT_PUBLIC_APP_URL || "https://docuparse.ai");
     const imageUrl = image ? new URL(image, metadataBase).toString() : null;
 
     return {

@@ -14,7 +14,7 @@
 //                     </h2>
 //                     <p className="text-base md:text-lg text-center text-accent-foreground/80 mt-6">
 //                         Connect Docuparse to your existing workflows effortlessly.
-//                         Whether it’s cloud storage or databases we plug right in so your data flows without friction.
+//                         Whether it's cloud storage or databases we plug right in so your data flows without friction.
 //                     </p>
 //                 </div>
 //             </Container>
@@ -58,20 +58,20 @@ const Connect = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center py-12 w-full bg-black text-white rounded-3xl">
+    <div className="flex flex-col items-center justify-center py-12 md:py-16 w-full bg-black text-white rounded-3xl">
 
       <Container className="bg-transparent">
-        <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+        <div className="flex flex-col items-center text-center max-w-2xl mx-auto px-4 sm:px-0">
           <SectionBadge title="See It In Action" />
-          <h2 className="text-4xl font-heading mt-6">Image to JSON Magic</h2>
-          <p className="text-lg mt-4 text-zinc-400">
+          <h2 className="text-3xl sm:text-4xl font-heading mt-6">Image to JSON Magic</h2>
+          <p className="text-base sm:text-lg mt-4 text-zinc-400">
             Docuparse transforms document images into structured data — watch it work.
           </p>
         </div>
       </Container>
 
       <Container className="bg-transparent">
-        <div className="mt-20 w-full flex justify-center items-center h-[500px] relative">
+        <div className="mt-8 sm:mt-20 w-full flex justify-center items-start sm:items-center min-h-[600px] sm:h-[500px] relative px-4 sm:px-0">
           <AnimatePresence mode="wait">
             {step === 0 && (
               <motion.div
@@ -80,10 +80,10 @@ const Connect = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
-                className="relative w-[340px] h-[440px]"
+                className="relative w-[240px] h-[320px] sm:w-[340px] sm:h-[440px]"
               >
-                <img src="/images/pdf2.png" className="absolute top-8 left-8 w-full rounded-xl shadow-xl opacity-70" />
-                <img src="/images/pdf3.png" className="absolute top-4 left-4 w-full rounded-xl shadow-xl opacity-85" />
+                <img src="/images/pdf2.png" className="absolute top-6 left-6 sm:top-8 sm:left-8 w-full rounded-xl shadow-xl opacity-70" />
+                <img src="/images/pdf3.png" className="absolute top-3 left-3 sm:top-4 sm:left-4 w-full rounded-xl shadow-xl opacity-85" />
                 <img src="/images/pdf1.png" className="absolute top-0 left-0 w-full rounded-xl shadow-xl z-10" />
               </motion.div>
             )}
@@ -95,50 +95,52 @@ const Connect = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
-                className="flex flex-col items-center justify-center space-y-4"
+                className="flex flex-col items-center justify-center space-y-4 pt-20 sm:pt-0"
               >
-                <Sparkles className="text-yellow-400 w-10 h-10 animate-spin-slow" />
-                <p className="text-sm text-zinc-300">Processing with AI...</p>
+                <Sparkles className="text-yellow-400 w-8 h-8 sm:w-10 sm:h-10 animate-spin-slow" />
+                <p className="text-xs sm:text-sm text-zinc-300">Processing with Docuparse AI...</p>
               </motion.div>
             )}
 
             {step === 2 && (
-            <motion.div
+              <motion.div
                 key="json"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
-                className="bg-zinc-950 text-purple-500 font-mono p-6 rounded-xl shadow-xl text-sm w-full max-w-2xl overflow-auto relative"
-            >
-                <pre className="whitespace-pre-wrap">
-            {`{
-            "document_title": "New customer's development and increasing the sale of product",
-            "introduction_paragraph": "My country economy at this season keeps escaping from Odoba of business....
-            "sections": [
-                {
-                    "title": "The main product and service at this season",
-                    "content": [
-                        {
-                            "type": "statement",
-                            "source": "From the product headquarters",
-                            "text": "In the image business, ....."
-                        }
-                    "plot": {
-                        "type": "pie_chart",
-                        "title": "Satisfaction rating to new product",
-                        "data_points": [
+                className="bg-zinc-950 text-purple-500 font-mono p-3 sm:p-6 rounded-xl shadow-xl w-full max-w-[280px] sm:max-w-2xl overflow-auto relative mt-16 sm:mt-0"
+              >
+                <pre className="whitespace-pre-wrap text-[11px] sm:text-sm leading-relaxed">
+                  {`{
+  "document_title": "New customer's development and increasing the sale of product",
+  "introduction_paragraph": "My country economy at this season keeps escaping from Odoba of business...",
+  "sections": [
+    {
+      "title": "The main product and service at this season",
+      "content": [
+        {
+          "type": "statement",
+          "source": "From the product headquarters",
+          "text": "In the image business, ....."
+        }
+      ],
+      "plot": {
+        "type": "pie_chart",
+        "title": "Satisfaction rating to new product",
+        "data_points": [
           {"category": "very good", "percentage": 47},
-           ...,
           {"category": "bad", "percentage": 7}
         ],
         "summary": "A pie chart indicates.."
       }
-    },
-
+    }
+  ]
 }`}
                 </pre>
-                <div className="absolute bottom-2 right-4 text-green-600 text-xs animate-pulse">Generated by Docuparse AI</div>
+                <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-4 text-green-600 text-[10px] sm:text-xs animate-pulse">
+                  Generated by Docuparse AI
+                </div>
               </motion.div>
             )}
           </AnimatePresence>

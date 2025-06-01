@@ -19,8 +19,8 @@ const HomePage = () => {
                     <Companies />
                 </Container> */}
 
-                <Features />
-                <Pricing />
+                {/* <Features /> */}
+                {/* <Pricing /> */}
                 {/* <Reviews /> */}
                 {/* <CTA /> */}
             </Wrapper>

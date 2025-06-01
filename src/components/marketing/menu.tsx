@@ -58,13 +58,13 @@ const Menu = () => {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                     <Link href="/pricing" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
                             Pricing
                         </NavigationMenuLink>
                     </Link>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 <NavigationMenuItem>
                     <Link href="/integrations" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-muted-foreground hover:text-foreground w-max hover:bg-none">
