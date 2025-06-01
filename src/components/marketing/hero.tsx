@@ -28,12 +28,18 @@ const Hero = () => {
                 </div>
             </Container>
             <BlurText
-                word={"Your ultimate social media\n marketing tool"}
-                className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-br from-foreground to-foreground/60 bg-clip-text text-transparent py-2 md:py-0 lg:!leading-snug font-medium racking-[-0.0125em] mt-6 font-heading"
+                word={"Docuparse AI"}
+                className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl bg-gradient-to-br from-foreground/90 to-foreground/50 bg-clip-text text-transparent py-2 md:py-0 lg:!leading-snug font-medium tracking-[-0.0125em] mt-6 font-heading"
+            />        
+            <BlurText
+                word={"From Chaos to Clarity"}
+                className="text-xl sm:text-3xl lg:text-4xl bg-gradient-to-br from-foreground/80 to-foreground/40 bg-clip-text text-transparent py-2 md:py-0 lg:!leading-snug font-medium tracking-[-0.0125em] mt-4 font-heading"
             />
             <Container delay={0.1}>
                 <p className="text-sm sm:text-base lg:text-lg mt-4 text-accent-foreground/60 max-w-2xl mx-auto">
-                    Elevate your social media presense with AI-powered content creation and scheduling. <span className="hidden sm:inline">Luro is the all-in-one solution for your social media marketing needs.</span>
+                    Convert unstructured data from scans, PDFs, handwriting, images, and more into clean, structured formats.
+                    No more manual parsing. Just plug in your data source and let Docuparse do the rest. 
+                    {/* <span className="hidden sm:inline">Docuparse is the all-in-one solution for your social media marketing needs.</span> */}
                 </p>
             </Container>
             <Container delay={0.2}>
@@ -56,7 +62,7 @@ const Hero = () => {
 
                     <div className="rounded-lg lg:rounded-[24px] border p-2 border-neutral-700 bg-black">
                         <Image
-                            src="/images/dashboard.png"
+                            src="/images/archi.png"
                             alt="dashboard"
                             width={1920}
                             height={1080}

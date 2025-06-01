@@ -17,6 +17,7 @@ import Perks from "./marketing/perks";
 import Pricing from "./marketing/pricing";
 import Reviews from "./marketing/reviews";
 import CTA from "./marketing/cta";
+import Appflow from "./marketing/appflow";
 import Footer from "./marketing/footer";
 
 export {
@@ -38,4 +39,5 @@ export {
     SignInForm,
     SignUpForm,
     Providers,
+    Appflow,
 };
