@@ -17,7 +17,7 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} - Docuparse AI `,
+    title = `${process.env.NEXT_PUBLIC_APP_NAME}`,
     description = "Transform your data with us\nReady to get structured?\nConnect your data source and let Docuparse handle the complexity. We\'re here to turn your chaos into clarity instantly.",
     image = "/thumbnail.png",
     icons = [
